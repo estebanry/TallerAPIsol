@@ -11,7 +11,7 @@ namespace TallerApi2.xamarin
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new Views.FacebookPage();
 		}
 
 		protected override void OnStart ()
