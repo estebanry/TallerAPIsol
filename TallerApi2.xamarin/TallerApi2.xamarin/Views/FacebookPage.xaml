@@ -7,9 +7,18 @@
     <ListView x:Name="listPublicaciones">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="{Binding Usuario}"
-                          Detail="{Binding Descripcion}"/>
-
+                <ViewCell>
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="{Binding Usuario}"/>
+                        <Label Text="{Binding FechaPublicacion}"/>
+                        <Label Text="{Binding Descripcion}"/>
+                        <Image Source="Img.jpg"/>
+                        <StackLayout Orientation="Horizontal"/>
+                            <Button Text="Like"/>
+                            <Button Text="Comment"/>
+                            <Button Text="Share"/>
+                    </StackLayout>
+                </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate> 
        </ListView>
